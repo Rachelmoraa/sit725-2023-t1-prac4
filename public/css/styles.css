@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../resources/background.png");
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    height: 12%;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    padding-left: 90px;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 60px;
+    padding-right: 90px;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav{
+    text-align: right;
+    flex: 1;
+}
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.jay h1{
+    color:#fff;
+    font-size: 50px;
+}
+.jay p{
+    color:#fff;
+}
+.jay{
+    padding-left: 120px;
+    padding-top: 150px;
+}
+.jay button{
+    width: 180px;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.cards{
+    color:  #fff;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    margin-top: -300px;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 5px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: 00.5s;
+
+}
+.card:first-child{
+    transform: translateY(35px);
+}
+.card h5{
+    font-size: 20px;
+    color: blueviolet;
+        /* z-index: 1 !important; */
+}
+.card:hover{
+    transform: translateY(-10px);
+}

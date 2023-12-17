@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>sahara</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+            <img src="resources/logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Region</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="/form">New Site</a></li>
+                </ul>
+            </nav>
+            <img src="resources/menu.png" class="menu-icon">
+        </div>
+        <div class="container">
+            <div class="mf">
+                <div class="jay">
+                    <h1>Sahara</h1>
+                    <p>Sahara desert is found in the northern and western part of Africa.<br>
+                        It is the largest hot desert in the world.
+                    </p>
+                    <button class="button">Explore</button>
+                </div>
+            </div>
+            <div class="cards">
+                <% sites.forEach((site)=>{ %>
+                    <div class="card" style="background-image: url('http://localhost:3500/<%= site.profile %>');">
+                        <h5>
+                            <%= site.name %>
+                        </h5>
+                        <p>
+                            <%= site.description %>
+                        </p>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
